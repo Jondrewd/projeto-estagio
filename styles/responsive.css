@@ -1,0 +1,51 @@
+#navBar a{
+    margin: 0px 6px;
+    color: rgb(244, 152, 103);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.774);
+    text-decoration: dotted;
+    font-size: 1em;
+}
+span a{
+    margin-left: 5px;
+}
+.home{
+    margin: 0;
+    font-size: 1em;
+    min-width: none;
+    min-height: none;
+    flex-direction: column-reverse;
+}
+.home nav{
+    width: 300px;
+}
+.homeTxt h1, p, button{
+    margin-top: 20px;
+}
+
+.lastLink{
+    display: none;
+}
+.play{
+    width: 150px;
+    height: 50px;
+}
+.play:hover{
+    background-color: rgb(64, 244, 64);
+    width: 155px;
+    height: 55px;
+}
+
+/* CSS DA PAGINA QUESTS */
+
+.questsHome{
+    margin-top: 60px;
+}
+.questsHome .nivel,.nivel2, .nivel3, .nivel4, .nivel5 {
+    text-decoration: none;
+    padding: 20px;
+    border: 1px solid black;
+    width: 240px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    color: white;
+}

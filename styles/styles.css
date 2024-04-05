@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: nourd;
+    text-align: center;
+    color: white;
+
+}
+
+
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    height: 100vh;
+    background-color: #58a0ff;
+}
+.home h1, h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:1px 1px 1px black;
+}
+
+.home h1{
+    font-size: 5em;
+}
+.home h2{
+    font-size: 2.5em;
+}
+
+.home span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 14%;
+
+}
+
+.home span button{
+    background-color: pink;
+    border: none;
+    width: 260px;
+    height: 70px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin: 20px;
+    margin-top: 60px;
+    cursor: pointer;
+    font-size: large;
+    color: black;
+    font-family: cursive;
+}
+.home span button:hover{
+    background-color: rgb(253, 134, 154);
+}
+
+.buttonJog{
+    rotate: -8deg;
+}
+.buttonApr{
+    rotate: 4deg;
+}
+.buttonProj{
+    rotate: -2deg;
+}
+.image{
+    background-image: url(/images/icone.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+.linha{
+    background-image: url(/images/linha.png);
+    width: 100%;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.button-layout{
+    width: 350px;
+    height: 160px;
+}
+
+.sol, .item, .flor, .nuvem, .arco{
+    width: 90px;
+    position: relative;
+}
+.sol{
+    top: -38%;
+    right: 25%;
+}
+
+.item{
+    top: -75%;
+    left: 20%;
+    rotate: 60deg;
+}
+.nuvem{
+    top: -50%;
+    right:35%;
+    rotate: -15deg;
+}
+.flor{
+    top: -75%;
+    right: 22%;
+}
+.arco{
+    top:-55%;
+    left: 20%;
+    rotate: -25deg;
+}
+
+
+/* CSS DA PAGINA QUESTS */
+.questsHome{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    
+}
+.questsHome .nivel{
+    text-decoration: none;
+    padding: 20px;
+    border: 1px solid black;
+    width: 400px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    color: white;
+}
+.questsHome .nivel{
+    background-color: rgb(43, 255, 0);
+    text-shadow: 1px 1px 1px black;
+}
+.questsHome .nivel:hover{
+    background-color: rgb(31, 172, 3);
+
+}
+.nivel2, .nivel3, .nivel4, .nivel5{
+        text-decoration: none;
+        padding: 20px;
+        border: 1px solid black;
+        width: 400px;
+        border-radius: 20px;
+        background-color: red;
+        backdrop-filter: blur(8px);
+        color: white;
+}
+
+/*  CSS NIVEL1 */ 
+
+#pergunta, #resposta{
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+#pergunta{
+    width: 400px;
+    height: 250px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#resposta {
+    display: flex;
+    flex-wrap: wrap;
+    width: 410px;
+    height: 150px;
+    gap: 10px;
+}
+#resposta button{
+    margin: 0;;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+}
+#resposta button:hover{
+    background-color: rgb(193, 193, 193);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
