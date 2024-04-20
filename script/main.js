@@ -80,7 +80,7 @@ function gerarResposta(){
 function gerarPergunta(){
     p1 = document.createElement('img')
     p1.classList.add('imgPergunta')
-    p1.setAttribute('src', `/images/perguntas/${numPergunta}`)
+    p1.setAttribute('src', `images/perguntas/${numPergunta}`)
     pergunta.append(p1)
 }
 
