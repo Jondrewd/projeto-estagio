@@ -119,7 +119,7 @@ function endGame(){
     buttonContinue = document.createElement('button')
     buttonContinue.classList.add('btn-resultado')
     buttonContinue.textContent=('Voltar ao menu')
-    buttonContinue.setAttribute('onClick', "window.location.href='projetoestagio.github.io/index.html';")
+    buttonContinue.setAttribute('onClick', "window.location.href='index.html';")
 
     resultado = document.createElement('div')
     resultado.classList.add('resultado')
