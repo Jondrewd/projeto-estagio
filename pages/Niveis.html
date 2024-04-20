@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" media="(max-width: 630px)" href="/styles/responsive.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+
+        <button id ='retornar' onclick="setTimeout(() => {  
+            window.location.href='/index.html';
+        }, 200);">
+            <img src="/images/arrow-left.svg" alt="">
+            Retornar
+        </button>
+
+        
+        <div class="niveis-layout">
+            <h1>Selecione um Nivel:</h1>
+            <button class="Iniciante"
+            onClick="window.location.href='Quests.html'">
+            Iniciante</button>
+
+            <button id='Intermediario' class="Intermediario" onclick="bloqueado(1)">Intermediario</button>
+
+            <button id='Avançado' class="Avançado" onclick="bloqueado(2)" >Avançado</button>
+        </div>
+
+    </div>
+    <script>
+        const buttonIntermediario = document.getElementById('Intermediario')
+        const buttonAvançado = document.getElementById('Avançado')
+        function bloqueado(index){
+            switch (index) {
+            case 1:
+                buttonIntermediario.innerHTML = 'Bloqueado'
+                buttonIntermediario.style.background = 'red'
+            setTimeout(() => {  
+                buttonIntermediario.style.background = 'pink'
+                buttonIntermediario.innerHTML = 'Intermediario'
+            }, 500);
+                break;
+
+            case 2:
+                buttonAvançado.innerHTML = 'Bloqueado'
+                buttonAvançado.style.background = 'red'
+            setTimeout(() => {  
+                buttonAvançado.style.background = 'pink'
+                buttonAvançado.innerHTML = 'Avançado'
+            }, 500)
+            break;           
+            }
+        }
+    </script>
+</body>
+</html>
