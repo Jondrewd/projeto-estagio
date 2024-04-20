@@ -70,7 +70,7 @@ button:hover{
     rotate: -2deg;
 }
 .image{
-    background-image: url(/images/icone.png);
+    background-image: url(images/icone.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
