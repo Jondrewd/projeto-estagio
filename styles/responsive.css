@@ -1,48 +1,78 @@
-#container{
+#container {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
 }
-.linha, .textoLinha{
+
+.linha, 
+.textoLinha {
     display: none;
 }
-.home h1{
+
+.home h1 {
     font-size: 3em;
 }
 
-.home span{
+.home span {
     margin-top: 14px;
 }
-button{
+
+button {
     width: 240px;
     height: 50px;
 }
-.button-layout{
+
+.button-layout {
     width: 350px;
     height: 123px;
 }
-.sol{
+
+.sol {
     top: -80%;
     right: 25%;
 }
-.item{
+
+.item {
     top: -75%;
     left: 20%;
     rotate: 60deg;
 }
-.nuvem{
+
+.nuvem {
     top: -100%;
     right:35%;
     rotate: -15deg;
 }
-.flor{
+
+.flor {
     top: -75%;
     right: 22%;
 }
-.arco{
-    top:-80%;
+
+.arco {
+    top: -80%;
     left: 20%;
     rotate: -25deg;
+}
+
+/* modifição*/
+@media (max-width: 768px) {
+    .respostas {
+        width: calc(33.33% - 10px); /* Ajusta a largura para 33.33% com espaçamento de 10px entre as respostas */
+    }
+}
+
+@media (max-width: 480px) {
+    .respostas {
+        width: calc(50% - 10px); /* Em telas menores, volta para 50% da largura com o mesmo espaçamento */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .resultado {
+        font-size: 1.3em; /* Diminui ainda mais o tamanho do texto para telas menores */
+        padding: 10px; /* Ajusta o espaçamento interno para telas menores */
+    }
 }
