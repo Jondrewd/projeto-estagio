@@ -30,7 +30,11 @@ body{
     font-size: 5em;
 }
 .home h2{
+<<<<<<< HEAD
     font-size: 2em;
+=======
+    font-size: 5em;
+>>>>>>> 56852e3cf39e0da69ce2c6e0e281ae85e661a03c
 }
 
 .home span{
