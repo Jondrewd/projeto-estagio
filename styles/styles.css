@@ -39,7 +39,6 @@ body{
     align-items: center;
     margin: auto;
     margin-top: 14%;
-
 }
 
 button{
@@ -151,7 +150,7 @@ button:hover{
 }
 #contador{
     position: absolute;
-    top: 65px; /* Aumente a distância do topo */
+    top: 65px; 
     color: rgb(255, 255, 255);
     font-family: cursive;
     text-shadow: 1px 1px 4px black;
@@ -164,7 +163,7 @@ button:hover{
     background-color: white;
     position: relative;
     display: block;
-    text-align: center; /* Centralize o texto horizontalmente */
+    text-align: center; 
 }
 .continue:hover{
     background-color: grey;
@@ -175,11 +174,11 @@ button:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 90%;
-    width: 400px; /* Defina uma largura fixa para o contêiner de resultados */
+    width: 400px;
     height: auto;
     backdrop-filter: blur(10px);
     text-shadow: 1px 1px 1px black;
-    font-size: 2em; /* Reduz ainda mais o tamanho do texto */
+    font-size: 2em;
     font-family: cursive;
     z-index: 1;
     padding: 20px;
@@ -227,10 +226,10 @@ button:hover{
 .tutorial{
     display: flex;
     flex-direction: column;
-    width: 80%; /* Reduza a largura para que o conteúdo não seja cortado em telas menores */
-    height: auto; /* Altere a altura para automático para que o conteúdo seja dimensionado conforme necessário */
-    margin: 10% auto; /* Centralize o tutorial na tela */
-    padding: 20px; /* Adicione um preenchimento interno para afastar o conteúdo das bordas */
+    width: 80%;
+    height: auto; 
+    margin: 10% auto;
+    padding: 20px;
     background-color: pink;
     border: 1.5px solid black;
     border-radius: 20px;
@@ -238,7 +237,7 @@ button:hover{
     text-shadow: 1px 1px 4px black;
 }
 .tutorial span{
-    margin: 10px 0; /* Reduza a margem entre os elementos de texto */
+    margin: 10px 0;
 }
 
 .tutorial > span >  h1{
@@ -258,11 +257,11 @@ button:hover{
     overflow: auto;
 }
 #retornar{
-    position: relative; /* Altere a posição para relativa */
+    position: relative;
     width: 150px;
     height: 50px;
-    margin: 20px auto; /* Centralize o botão horizontalmente */
-    z-index: 2; /* Defina um z-index maior para o botão retornar */
+    margin: 20px auto; 
+    z-index: 2; 
 }
 
 
