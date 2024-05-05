@@ -30,11 +30,7 @@ body{
     font-size: 5em;
 }
 .home h2{
-<<<<<<< HEAD
     font-size: 2em;
-=======
-    font-size: 5em;
->>>>>>> 56852e3cf39e0da69ce2c6e0e281ae85e661a03c
 }
 
 .home span{
@@ -74,7 +70,6 @@ button:hover{
     rotate: -2deg;
 }
 .image{
-    background-image: url(/images/icone.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -82,7 +77,6 @@ button:hover{
     height: 200px;
 }
 .linha{
-    background-image: url(/images/linha.png);
     width: 100%;
     height: 70px;
     background-repeat: no-repeat;
