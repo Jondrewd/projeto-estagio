@@ -24,14 +24,39 @@
             onclick= "inicia(1)">
             Iniciante</button>
 
-            <button id='Intermediario' class="Intermediario" onclick="inicia(2)">Intermediario</button>
+            <button id='Intermediario' class="Intermediario" onclick="bloqueado(1)">Intermediario</button>
 
-            <button id='Avançado' class="Avançado" onclick="inicia(3)" >Avançado</button>
+            <button id='Avançado' class="Avançado" onclick="bloqueado(2)" >Avançado</button>
         </div>
 
     </div>
     <script src="./script/data.js"></script>
     <script src="./script/main.js"></script>
+   
+<script>
+const buttonIntermediario = document.getElementById('Intermediario')
+const buttonAvançado = document.getElementById('Avançado')
+function bloqueado(index){
+    switch (index) {
+    case 1:
+        buttonIntermediario.innerHTML = 'Bloqueado'
+        buttonIntermediario.style.background = 'red'
+    setTimeout(() => {  
+        buttonIntermediario.style.background = 'pink'
+        buttonIntermediario.innerHTML = 'Intermediario'
+    }, 500);
+        break;
 
+    case 2:
+        buttonAvançado.innerHTML = 'Bloqueado'
+        buttonAvançado.style.background = 'red'
+    setTimeout(() => {  
+        buttonAvançado.style.background = 'pink'
+        buttonAvançado.innerHTML = 'Avançado'
+    }, 500)
+    break;           
+    }
+}
+</script>
 </body>
 </html>

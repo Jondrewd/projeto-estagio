@@ -66,20 +66,40 @@ function recomeçar() {
 }
 
 function gerarResposta() {
-    for(var i = 0; i < resp.length; i++) {
-        numResposta = data[0]['resposta'+nivel][numAleatorio[i]];
-        resp[i].innerHTML = numResposta;
-        if (numResposta[6] == numPergunta[0]) {
-            respostaCerta = i; 
+    if(nivel ==1){
+        for(var i = 0; i < resp.length; i++) {
+            numResposta = data[0]['resposta'+nivel][numAleatorio[i]];
+            resp[i].innerHTML = numResposta;
+            if (numResposta[6] == numPergunta[0]) {
+                respostaCerta = i; 
+            }
+        }
+    }else{
+        for(var i = 0; i < resp.length; i++) {
+            numResposta = data[0]['resposta'+nivel][numAleatorio[i]];
+            resp[i].innerHTML = numResposta;
+            if (numResposta == numPergunta[0]) {
+                respostaCerta = i; 
+                console.log(numResposta)
+                console.log(numPergunta)
+                console.log(resp.length)
+            }
         }
     }
 }
 
 function gerarPergunta() {
+    if(nivel ==1){
     p1 = document.createElement('img');
     p1.classList.add('imgPergunta');
     p1.setAttribute('src', `images/perguntas/${numPergunta}`);
     pergunta.append(p1);
+}else{
+    p1 = document.createElement('img');
+    p1.classList.add('imgPergunta');
+    p1.setAttribute('src', `images/perguntas/${numPergunta}`);
+    pergunta.append(p1);
+}
 }
 
 function selecionarResposta(respostaIndex) {
