@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function inicia(numero) {
-    window.location.href = 'quests.html';
+    window.location.href = 'Quests.html';
     localStorage.setItem('nivel', numero);
 }
 
